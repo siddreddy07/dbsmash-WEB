@@ -45,7 +45,7 @@ const Homepage = () => {
   return (
     <div className="pt-16 min-h-screen bg-black overflow-hidden">
       <div className='w-full fixed flex z-50 items-center justify-center'>
-      <div className='flex items-center rounded-br-md text-sm rounded-bl-md bg-gradient-to-r py-3 from-gray-300 via-gray-400 to-gray-500 bg-clip-text text-transparent justify-center w-full border-2 border-t-0 border-zinc-900 md:w-1/4 h-4'>
+      <div className='flex items-center rounded-br-md text-sm rounded-bl-md bg-gradient-to-r py-3 from-gray-300 via-gray-400 to-gray-500 bg-clip-text text-transparent justify-center w-full border-2 border-t-0 border-zinc-900 lg:w-1/4 h-4'>
         <h1>🎉 npm package now live - <a className='cursor-pointer' href="https://www.npmjs.com/package/dbsmash"><u className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>dbsmash</u></a></h1>
       </div>
       </div>
@@ -63,7 +63,7 @@ const Homepage = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-8"
           >
-            <DbSmashIcon className="lg:w-[412px] lg:h-[412px] mx-auto -mb-20  lg:-mt-20 sm:w-96 sm:h-96" />
+            <DbSmashIcon className="lg:w-[412px] lg:h-[412px] mx-auto -mb-20 mt-10 md:mt-0 lg:-mt-20 sm:w-96 sm:h-96" />
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
                 Smash Schema
@@ -107,18 +107,18 @@ const Homepage = () => {
           >
             <Link
               to="/playground"
-              className="group relative inline-flex items-center px-2 lg:px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-xl text-white font-semibold text-md lg:text-lg transition-all duration-300 hover:from-gray-800 hover:to-gray-900 hover:shadow-2xl hover:shadow-gray-500/25"
+              className="group relative inline-flex items-center p-3 lg:px-8 lg:py-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-xl text-white font-semibold text-[12px] md:text-md lg:text-lg transition-all duration-300 hover:from-gray-800 hover:to-gray-900 hover:shadow-2xl hover:shadow-gray-500/25"
             >
-              <Sparkles className="w-5 h-5 mr-2 group-hover:animate-pulse" />
+              <Sparkles className="md:w-5 w-4 h-4 md:h-5 mr-2 group-hover:animate-pulse" />
               Try Playground
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="md:w-5 w-4 h-4 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
             
             <Link
               to="/docs"
-              className="group inline-flex items-center px-2 lg:px-8 py-4 bg-transparent border-2 border-gray-700 rounded-xl text-gray-300 font-semibold text-md lg:text-lg transition-all duration-300 hover:border-gray-600 hover:text-white hover:bg-gray-800/30"
+              className="group inline-flex items-center p-3 lg:px-8 lg:py-4 bg-transparent border-2 border-gray-700 rounded-xl text-gray-300 font-semibold text-[12px] md:text-md lg:text-lg transition-all duration-300 hover:border-gray-600 hover:text-white hover:bg-gray-800/30"
             >
-              <Code2 className="w-5 h-5 mr-2" />
+              <Code2 className="md:w-5 w-4 h-4 md:h-5 mr-2" />
               Read Docs
             </Link>
           </motion.div>
@@ -155,7 +155,7 @@ const Homepage = () => {
         transition={{ duration: 0.8, delay: 1.2 }}
         className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900"
       >
-        <div className="max-w-7xl mx-auto -mt-10">
+        <div className="max-w-7xl mx-auto -mt-20 md:-mt-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               From Idea to Schema in Seconds
@@ -168,17 +168,17 @@ const Homepage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Sparkles className="w-12 h-12" />,
+                icon: <Sparkles className="md:w-12 w-8 h-8 md:h-12" />,
                 title: "AI-Powered",
                 description: "Advanced natural language processing that understands complex database requirements",
               },
               {
-                icon: <Workflow className="w-12 h-12" />,
+                icon: <Workflow className="md:w-12 w-8 h-8 md:h-12" />,
                 title: "Visual Diagrams",
                 description: "Interactive ER diagrams that you can pan, zoom, and export in multiple formats",
               },
               {
-                icon: <Code2 className="w-12 h-12" />,
+                icon: <Code2 className="md:w-12 w-8 h-8 md:h-12" />,
                 title: "Ready Code",
                 description: "Generate production-ready Prisma and Firestore schemas with one click",
               },
@@ -188,7 +188,7 @@ const Homepage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-                className="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:scale-105"
               >
                 <div className="text-gray-400 mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
