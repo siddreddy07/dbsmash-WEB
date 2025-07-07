@@ -52,10 +52,10 @@ const Navbar = () => {
 
 
   <a
-    href="https://github.com/dbsmash/dbsmash"
+    href="https://github.com/siddreddy07/dbsmash-WEB"
     target="_blank"
     rel="noopener noreferrer"
-    className="p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-800/30 transition-all duration-300"
+    className="p-2 cursor-pointer rounded-md text-gray-300 hover:text-white hover:bg-gray-800/30 transition-all duration-300"
   >
     <Github className="w-5 h-5" />
   </a>

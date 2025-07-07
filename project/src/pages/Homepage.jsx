@@ -46,7 +46,7 @@ const Homepage = () => {
     <div className="pt-16 min-h-screen bg-black overflow-hidden">
       <div className='w-full fixed flex z-50 items-center justify-center'>
       <div className='flex items-center rounded-br-md text-sm rounded-bl-md bg-gradient-to-r py-3 from-gray-300 via-gray-400 to-gray-500 bg-clip-text text-transparent justify-center w-full border-2 border-t-0 border-zinc-900 md:w-1/4 h-4'>
-        <h1>🎉 npm package now live - <a className='' href=""><u className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>dbsmash</u></a></h1>
+        <h1>🎉 npm package now live - <a className='cursor-pointer' href="https://www.npmjs.com/package/dbsmash"><u className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>dbsmash</u></a></h1>
       </div>
       </div>
       {/* Hero Section */}
@@ -198,7 +198,7 @@ const Homepage = () => {
           </div>
         </div>
         <span className='flex mt-6 -mb-14 w-full items-center justify-center'>
-        <h2 className='flex items-center justify-center gap-2'>crafted with <Heart size={16} fill='grey' className='text-gray-800'/> by <u>siddharthreddy</u></h2>
+        <h2 className='flex items-center justify-center gap-2'>crafted with <Heart size={16} fill='grey' className='text-gray-800'/> by <u> <a className='cursor-pointer' href="https://www.linkedin.com/in/n-siddharth-reddy-9579a1273/">siddharthreddy </a></u></h2>
         </span>
       </motion.section>
     </div>
