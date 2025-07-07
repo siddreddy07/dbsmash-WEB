@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 
 export const SchemaContext = createContext();
-const socket = io("http://localhost:3000"); // 🔁 change to ngrok/production if needed
+const socket = io("https://dbsmash-backend.onrender.com"); // 🔁 change to ngrok/production if needed
 
 export const SchemaProvider = ({ children }) => {
   const [aireply, setaireply] = useState(null);
