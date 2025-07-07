@@ -122,7 +122,7 @@ service cloud.firestore {
             ))}
           </div>
           <p>
-            * Now Supported <div className='flex bg-gray-200 h-14 rounded-lg py-2 items-center gap-4'><img src="../../public/supa-removebg-preview.png" width={100} alt="" /><img src="../../public/fb-removebg-preview.png" width={100} alt="" /><img src="../../public/mongodb-removebg-preview.png" width={100} alt="" /></div>
+            * Now Supported <div className='flex bg-gray-200 h-14 rounded-lg py-2 items-center gap-4'><img src="https://res.cloudinary.com/deiiozl5e/image/upload/v1751897083/mongodb-removebg-preview_iily21.png" width={100} alt="" /><img src="https://res.cloudinary.com/deiiozl5e/image/upload/v1751897083/supa-removebg-preview_f8he7j.png" width={100} alt="" /><img src="https://res.cloudinary.com/deiiozl5e/image/upload/v1751897083/fb-removebg-preview_d2dc7y.png" width={100} alt="" /></div>
           </p>
           
           <p className="text-gray-400 text-xs sm:text-sm italic">Follow up Commands will be provided after the db choice and initialization has done . Please execute accordingly (for db Spinoff) </p>
