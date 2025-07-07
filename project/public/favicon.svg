@@ -1,0 +1,61 @@
+<svg
+  width="4096"
+  height="4096"
+  viewBox="0 0 512 512"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="silverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5E7EB" />
+      <stop offset="50%" stop-color="#9CA3AF" />
+      <stop offset="100%" stop-color="#4B5563" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hammer -->
+  <g stroke="url(#silverGradient)" stroke-width="6" fill="none">
+    <path
+      d="M200 100 L280 180 M240 140 L320 60"
+      stroke="url(#silverGradient)"
+      stroke-width="12"
+      stroke-linecap="round"
+      filter="url(#glow)"
+    />
+    <rect x="260" y="160" width="64" height="24" rx="5" fill="url(#silverGradient)" />
+  </g>
+
+  <!-- ER Diagram Elements -->
+  <g stroke="url(#silverGradient)" stroke-width="10" fill="none">
+    <!-- Entity Rectangles -->
+    <rect x="180" y="220" width="84" height="54" rx="5" />
+    <rect x="280" y="220" width="84" height="54" rx="5" />
+    <rect x="230" y="300" width="84" height="54" rx="5" />
+    <!-- Relationship Lines -->
+    <line x1="260" y1="245" x2="280" y2="245" />
+    <line x1="270" y1="270" x2="270" y2="300" />
+    <!-- Diamond for Relationship -->
+    <path
+      d="M260 245 L270 255 L280 245 L270 235 Z"
+      fill="url(#silverGradient)"
+      filter="url(#glow)"
+    />
+  </g>
+
+  <!-- Smash Effect (Ripple) -->
+  <circle
+    cx="270"
+    cy="280"
+    r="54"
+    stroke="url(#silverGradient)"
+    stroke-opacity="0.1"
+    stroke-width="4"
+  />
+</svg>
