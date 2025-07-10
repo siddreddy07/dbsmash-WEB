@@ -5,6 +5,8 @@
 > 🧠 Describe your app idea.  
 > 🚀 DbSmash generates Schema Diagram and MySQL code.
 
+**[Checkout Website](https://dbsmash.netlify.app/)** 
+
 ## Table of Contents
 
 - [Project Structure](#project-structure)
