@@ -63,8 +63,8 @@ const Homepage = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-8"
           >
-            <DbSmashIcon className="lg:w-[412px] lg:h-[412px] mx-auto -mb-20 mt-10 md:mt-0 lg:-mt-20 sm:w-96 sm:h-96" />
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
+            <DbSmashIcon className="md:w-[412px] md:h-[412px] mx-auto -mb-20 md:mt-2 mt-0 lg:-mt-20 w-80 h-96" />
+            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
                 Smash Schema
               </span>
@@ -73,7 +73,14 @@ const Homepage = () => {
                 Chaos
               </span>
             </h1>
+
+            <span className='md:hidden flex items-center gap-2 justify-center'>
+              <h1 className='text-lg bg-gradient-to-r hover:from-gray-400 hover:transition-all duration-500 animate-pulse ease-linear hover:to-white hover:cursor-default from-white to-gray-400 bg-clip-text text-transparent'>📢</h1>
+            <a href="https://www.producthunt.com/products/dbsmash?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-dbsmash" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=991628&theme=dark&t=1752420889217" alt="DbSmash - Schema&#0032;gen&#0032;&#0038;&#0032;init&#0032;via&#0032;smart&#0032;CLI&#0032;—&#0032;web&#0032;UI&#0032;if&#0032;you&#0039;re&#0032;lazy | Product Hunt" width="150" height="54" /></a>
+          </span>
           </motion.div>
+
+          
         
           
           <motion.div
