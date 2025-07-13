@@ -26,6 +26,10 @@ const Navbar = () => {
               dbSmash
             </span>
           </Link>
+          <span className='flex ml-28 items-center justify-between gap-4'>
+    <h1 className='text-xl bg-gradient-to-r hover:from-gray-400 hover:transition-all duration-500 animate-pulse ease-linear hover:to-white hover:cursor-default from-white to-gray-400 bg-clip-text text-transparent'>📢Featured on</h1>
+            <a href="https://www.producthunt.com/products/dbsmash?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-dbsmash" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=991628&theme=dark&t=1752420889217" alt="DbSmash - Schema&#0032;gen&#0032;&#0038;&#0032;init&#0032;via&#0032;smart&#0032;CLI&#0032;—&#0032;web&#0032;UI&#0032;if&#0032;you&#0039;re&#0032;lazy | Product Hunt" width="150" height="54" /></a>
+          </span>
           
           <div className="flex items-center gap-3 lg:gap-8">
   {navItems.map((item) => (
