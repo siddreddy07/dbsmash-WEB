@@ -76,7 +76,7 @@ const Homepage = () => {
 
             <span className='md:hidden flex items-center gap-2 justify-center'>
               <a href="https://peerlist.io/siddreddy/project/dbsmash">
-            <img src="../../public/peerlist.svg" width="120" height="54" alt="" />
+            <img src="/peerlist.svg" width="120" height="54" alt="" />
             </a>
               <h1 className='text-md bg-gradient-to-r hover:from-gray-400 hover:transition-all duration-500 animate-pulse ease-linear hover:to-white hover:cursor-default from-white to-gray-400 bg-clip-text text-transparent'>📢</h1>
             <a href="https://www.producthunt.com/products/dbsmash?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-dbsmash" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=991628&theme=dark&t=1752420889217" alt="DbSmash - Schema&#0032;gen&#0032;&#0038;&#0032;init&#0032;via&#0032;smart&#0032;CLI&#0032;—&#0032;web&#0032;UI&#0032;if&#0032;you&#0039;re&#0032;lazy | Product Hunt" width="120" height="54" /></a>
