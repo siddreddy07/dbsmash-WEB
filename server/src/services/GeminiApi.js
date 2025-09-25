@@ -6,7 +6,6 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
-// Prompt 1: User description → SQL schema only
 const promptSqlOnly = (userInput) => `
 You are an expert database architect AI.
 
@@ -29,7 +28,6 @@ User app description:
 "${userInput}"
 `;
 
-// Prompt 2: SQL schema → React Flow nodes and edges only
 const promptErDiagramOnly = (sqlSchema) => `
 You are an expert ER diagram generator AI that creates React Flow-compatible output based on MySQL DDL schema.
 

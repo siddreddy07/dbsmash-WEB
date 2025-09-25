@@ -24,7 +24,6 @@ io.on('connection', (socket) => {
   if (ip === '::1' || ip === '127.0.0.1') ip = 'localhost-dev';
   const rediskey = `iplimit:${ip}`;
 
-  // Handle prompt
   socket.on('sendPrompt', async (userPrompt) => {
     console.log('📝 Prompt received:', userPrompt);
 
@@ -37,16 +36,16 @@ io.on('connection', (socket) => {
         return socket.disconnect(true);
       }
 
-      // Call Gemini API
+      console.log("AI Response : ")
+
       const response = await genAi(userPrompt);
 
       if (response) {
         socket.emit('airesponse', response);
 
-        // ✅ Now increase the prompt count
         const newCount = await redis.incr(rediskey);
         if (newCount === 1) {
-          await redis.expire(rediskey, 86400); // Set expiry on first prompt
+          await redis.expire(rediskey, 86400);
         }
 
       } else {

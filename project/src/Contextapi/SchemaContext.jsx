@@ -2,7 +2,8 @@ import React, { createContext, useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 
 export const SchemaContext = createContext();
-const socket = io("https://dbsmash-backend.onrender.com"); // 🔁 change to ngrok/production if needed
+const socket = io("https://dbsmash-backend.onrender.com");
+// const socket = io("http://localhost:3000");
 
 export const SchemaProvider = ({ children }) => {
   const [aireply, setaireply] = useState(null);
@@ -13,13 +14,11 @@ export const SchemaProvider = ({ children }) => {
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("chat_history"));
 
-    // ✅ Check validity
     const isValid =
       saved?.user?.id &&
       saved?.ai?.content?.sql &&
       Array.isArray(saved.ai.content.initialNodes);
 
-    // ✅ Check expiry (24h)
     const savedTime = new Date(saved?.timestamp || saved?.ai?.timestamp || 0);
     const now = new Date();
     const expired = now - savedTime > 24 * 60 * 60 * 1000; // 24h in ms
@@ -66,7 +65,6 @@ export const SchemaProvider = ({ children }) => {
       setloading(false);
     });
 
-    // ❌ Handle AI errors
     socket.on("aiError", () => {
       setaireply({
         id: Date.now(),
